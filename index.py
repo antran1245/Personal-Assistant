@@ -1,12 +1,12 @@
 import speech_recognition as sr
 
-
+# Print all the available input devices
 def printDevice():
     for i in range(0, len(sr.Microphone.list_microphone_names())):
         if "Microphone" in sr.Microphone.list_microphone_names()[i]:
             print(i, sr.Microphone.list_microphone_names()[i])
 
-
+# Turn mic audio input into text
 def micToText():
     with sr.Microphone(device_index=1) as source:
         print('Talk')

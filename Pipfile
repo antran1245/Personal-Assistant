@@ -31,6 +31,8 @@ urllib3 = "==1.26.12"
 virtualenv = "==20.14.0"
 virtualenv-clone = "==0.5.7"
 werkzeug = "==2.1.2"
+appopener = "*"
+pyenchant = "*"
 
 [dev-packages]
 
